@@ -25,7 +25,7 @@
   background-color: rgba(181,221,255,255)
 }
 
-.row .col *{
+.p-10{
   padding: 10px;
 }
 
@@ -35,17 +35,19 @@
 
 .row .col img{
   width: 100%;
-
 }
 
 .col .box-img{
   width: 250px;
-  height: 100px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-bottom: 0px;
 }
 
 .botton{
   border-radius: 40px;
   text-decoration: none;
+  padding: 5px;
 }
 
 .col.blu .botton{
@@ -83,4 +85,33 @@
 
 .col h2{
   color: rgba(151,146,228,255) ;
+}
+
+p, h2, h3, h4, h5{
+  padding: 10px;
+}
+
+
+/* media */
+
+@media screen and (max-width: 780px)
+              and (min-width: 600px)
+{
+  .container{
+    width: 100%;
+  }
+  
+  .container .row1{
+    width: 100%;
+    display: flex;
+  }
+
+  #col-66{
+    width: 65%;
+  }
+
+  .row-1 .col{
+    width: 33%;
+    flex-wrap: wrap;
+  }
 }
